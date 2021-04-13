@@ -35,7 +35,13 @@
 const $ = new Env("京喜财富岛提现");
 const JD_API_HOST = "https://m.jingxi.com/";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
-const jdTokenNode = $.isNode() ? require('./jdJxncTokens.js') : '';
+const jdTokenNode = [
+    '{"farm_jstoken":"6973b8a27b2d484aa14f13fdd7b4e907","timestamp":"1616123861073","phoneid":"b4aa1debbe288741"}',
+    '{"farm_jstoken":"f676775977f80f25484b7f86f94f8b72","timestamp":"1616123593797","phoneid":"bc17c1aca06d5b7cdf493761f98f3a9ff47fb16b"}',
+    '{"timestamp":"1617079986428","phoneid":"vnz7z4a2kzp4b3ju6dgjluilk138tskd6p8bbnge","farm_jstoken":"92fc1763b3ca25403e7a8d74e155e2c7"}',
+    '{"timestamp":"1617079997434","phoneid":"10yv0oc6xis1baidni8aqv2zkj4qz0zopfke7dnp","farm_jstoken":"cd7b6cff9a9cb615ccd452de2558d198"}',
+    '{"timestamp":"1617080006479","phoneid":"d87rm16z6owjvg4r49f6mph6c43no0h0g7nuo3ph","farm_jstoken":"e6b072094e04bc2264109c870378db16"}'
+    ];
 $.result = [];
 $.cookieArr = [];
 $.currentCookie = '';

@@ -1,8 +1,21 @@
-/**
-*
-  Name:财富岛提现
-*
-**/
+/*
+财富岛提现
+
+非常感谢 lxk0301 大佬的指导，让这个脚本支持了手机端运行。
+已支持IOS双京东账号,Node.js支持N个京东账号
+脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+============Quantumultx===============
+[task_local]
+#财富岛提现
+0 0 * * * https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_cfdtx.js, tag=财富岛提现, enabled=true
+================Loon==============
+[Script]
+cron "0 0 * * *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_cfdtx.js,tag=财富岛提现
+===============Surge=================
+财富岛提现 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_cfdtx.js
+============小火箭=========
+财富岛提现 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_cfdtx.js, cronexpr="0 0 * * *", timeout=3600, enable=true
+*/
 
 const $ = new Env("京喜财富岛提现");
 const JD_API_HOST = "https://m.jingxi.com/";

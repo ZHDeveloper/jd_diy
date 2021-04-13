@@ -6,14 +6,14 @@
 ============Quantumultx===============
 [task_local]
 #京喜财富岛提现
-0 0 * * * https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/z_cfdtx.js, tag=京喜财富岛提现, enabled=true
+0 0 * * * https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/jx_cfdtx.js, tag=京喜财富岛提现, enabled=true
 ================Loon==============
 [Script]
-cron "0 0 * * *" script-path=https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/z_cfdtx.js,tag=京喜财富岛提现
+cron "0 0 * * *" script-path=https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/jx_cfdtx.js,tag=京喜财富岛提现
 ===============Surge=================
-京喜财富岛提现 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/z_cfdtx.js
+京喜财富岛提现 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/jx_cfdtx.js
 ============小火箭=========
-京喜财富岛提现 = type=cron,script-path=https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/z_cfdtx.js, cronexpr="0 0 * * *", timeout=3600, enable=true
+京喜财富岛提现 = type=cron,script-path=https://raw.githubusercontent.com/ZHDeveloper/jd_diy/main/scripts/jx_cfdtx.js, cronexpr="0 0 * * *", timeout=3600, enable=true
 */
 
 const $ = new Env("京喜财富岛提现");
